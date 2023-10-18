@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  gather_facts: yes
+  become: yes
+  become_user: root
+  tasks:
+    - ansible.builtin.include_role:
+        name: "{{ taskfiles }}"
+      with_items:
+        - file_creation
+      loop_control:
+        loop_var: taskfiles
