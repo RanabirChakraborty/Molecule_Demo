@@ -3,10 +3,8 @@
   file:
     path: "{{ directory_path }}"
     state: directory
-  become: yes
 
 - name: Create a file inside the directory
   copy:
     content: "This is the content of the file."
     dest: "{{ file_path }}"
-  become: yes
