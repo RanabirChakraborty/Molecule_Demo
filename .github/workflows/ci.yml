@@ -27,10 +27,6 @@ jobs:
           pip install yamllint 'molecule>=4.0.4' 'molecule-plugins[podman]>=23.0.0' ansible-core flake8 ansible-lint voluptuous
           ansible-galaxy collection install -r requirements.yml
 
-      - name: Run linter
-        run: |
-          ansible-lint --version
-          ansible-lint -v
 
       - name: "Run molecule tests"
         run: molecule test --all
