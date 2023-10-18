@@ -6,7 +6,7 @@ dependency:
     ignore-errors: True
     requirements-file: molecule/default/requirements.yml
 driver:
-  name: docker
+  name: podman
 platforms:
   - name: instance
     image: registry.access.redhat.com/ubi8/ubi-init
