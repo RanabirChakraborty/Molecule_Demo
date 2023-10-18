@@ -23,7 +23,6 @@ jobs:
 
       - name: Install testing dependencies.
         run: |
-          pip install podman-ansible
           python -m pip install --upgrade pip
           pip install yamllint 'molecule>=4.0.4' 'molecule-plugins[podman]>=23.0.0' ansible-core flake8 ansible-lint voluptuous
           ansible-galaxy collection install -r requirements.yml
