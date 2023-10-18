@@ -4,4 +4,4 @@ collections:
   - community.crypto
   - community.postgresql
   - ansible.posix
-  - containers.podman
+  - containers.docker
